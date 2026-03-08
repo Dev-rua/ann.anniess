@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Women's Day </title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="three-container"></div>
+    <canvas id="textCanvas"></canvas>
+
+    <div id="hold-container">
+        <div class="hold-text">Nhấn giữ để bắt đầu</div>
+        <svg class="progress-ring" width="80" height="80">
+            <circle class="progress-ring__bg" stroke="#e84393" stroke-width="4" fill="transparent" r="34" cx="40" cy="40"/>
+            <circle class="progress-ring__progress" stroke="#e84393" stroke-width="6" fill="transparent" r="34" cx="40" cy="40"/>
+        </svg>
+    </div>
+
+    <div id="mail-btn" class="hidden-element">💌</div>
+
+    <div id="letter-wrapper" class="hidden-element">
+        <div id="center-envelope">💌</div>
+        
+        <div id="letter-banner">
+            <div class="butterfly">🦋</div>
+            <p id="typed-text"></p>
+        </div>
+    </div>
+
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
